@@ -13,6 +13,10 @@ import MyJavaScript from "../assets/programming_languages/javascript.png";
 import MyCss from "../assets/programming_languages/css-3.png";
 import MyPhp from "../assets/programming_languages/php.png";
 import MyReact from "../assets/programming_languages/react.png";
+import MyBootstrap from "../assets/programming_languages/Bootstrap.png";
+import MyTailwind from "../assets/programming_languages/tailwind.png";
+import MyJava from "../assets/programming_languages/JAVA.png";
+import MyJquery from "../assets/programming_languages/jquery.png";
 
 const Home = () => {
   useEffect(() => {
@@ -78,19 +82,21 @@ const Home = () => {
             learn it.
           </p>
           <main className=" mx-auto">
-            <p className="text-white fantasy-font text-5xl text-center mb-3 m-10">
-              Skills
-            </p>
             <main className="grid grid-cols-1 md:grid-cols-2 items-center">
               <section
                 className="md:col-span-1 order-first md:order-none flex items-center justify-center md:justify-end"
                 data-aos="fade-left"
               >
-                <img
-                  src={myPic}
-                  alt=""
-                  className="object-cover w-96 h-96 rounded-md mx-auto md:mx-0 mobile-animate md:order-last"
-                />
+                <div>
+                  <p className="text-white fantasy-font text-5xl text-center mb-3 m-10">
+                    Skills
+                  </p>
+                  <img
+                    src={myPic}
+                    alt=""
+                    className="object-cover w-96 h-96 rounded-md mx-auto md:mx-0 mobile-animate md:order-last"
+                  />
+                </div>
               </section>
               <section
                 data-aos="fade-right"
@@ -101,12 +107,27 @@ const Home = () => {
                 </p>
                 <div className="flex flex-wrap justify-center md:justify-start gap-1">
                   <img
+                    src={MyBootstrap}
+                    alt=""
+                    className="order-8 w-16 h-16 object-contain"
+                  />
+                  <img
+                    src={MyTailwind}
+                    alt=""
+                    className="order-7 w-16 h-16 object-contain"
+                  />
+                  <img
+                    src={MyPhp}
+                    alt=""
+                    className="order-6 w-16 h-16 object-contain"
+                  />
+                  <img
                     src={MyReact}
                     alt=""
                     className="order-5 w-16 h-16 object-contain"
                   />
                   <img
-                    src={MyPhp}
+                    src={MyJquery}
                     alt=""
                     className="order-4 w-16 h-16 object-contain"
                   />
@@ -137,14 +158,14 @@ const Home = () => {
       >
         <div className="z-10">
           <h1
-            className="text-6xl text-white fantasy-font text-center font-semibold mb-4 mt-0 py-5 z-10"
+            className="text-6xl text-white fantasy-font text-center font-semibold mb-4 px-7 mt-0 py-5 z-10"
             data-aos="fade-up"
             data-aos-delay="150"
           >
-            My Social Media Accounts
+            My Accounts
           </h1>
           <div className="flex justify-center mb-4 px-10">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pb-7">
               <section data-aos="fade-up" data-aos-delay="200">
                 <CardWithImage
                   imageSrc={myFbPic}
