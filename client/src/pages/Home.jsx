@@ -96,7 +96,9 @@ const Home = () => {
                 data-aos="fade-right"
                 className="md:col-span-1 md:mt-5 fantasy-font text-center md:text-left mobile-animate"
               >
-                <h1 className="text-6xl text-white mb-4">Programming</h1>
+                <p className="text-5xl text-white mb-4 md:text-left md:px-4 md:mx-auto">
+                  Programming
+                </p>
                 <div className="flex flex-wrap justify-center md:justify-start gap-1">
                   <img
                     src={MyReact}
